@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cyber Crime Assist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Cyber Crime Assist</h1>
+    <p>Your guide for reporting online frauds & complaints</p>
+  </header>
+
+  <main class="container">
+    <section class="grid" id="scenarios"></section>
+
+    <section id="guide-box" class="guide hidden">
+      <h2>🔍 Issue: <span id="scenario-title"></span></h2>
+      <ul id="guide-list"></ul>
+    </section>
+
+    <section class="guide">
+      <h2>🗂️ State-wise Cyber Cell Contacts</h2>
+      <select id="state-dropdown" onchange="showContact()">
+        <option value="">-- Select State / UT --</option>
+      </select>
+      <p id="contact-info"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <hr/>
+    <p>© 2025 | Designed by <strong>Nikul Suthar</strong></p>
+    <p>📬 <a href="mailto:nikulsuthar263@gmail.com">Nikulsuthar263@gmail.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
